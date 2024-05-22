@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Routine Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1>Daily Routine Scheduler</h1>
+        <form id="routine-form">
+            <label for="task">Task:</label>
+            <input type="text" id="task" name="task" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="start-time">Start Time:</label>
+            <input type="time" id="start-time" name="start-time" required>
+            
+            <label for="end-time">End Time:</label>
+            <input type="time" id="end-time" name="end-time" required>
+
+            <button type="submit">Add Task</button>
+        </form>
+        
+        <h2>Today's Schedule</h2>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="particles-config.js"></script>
+</body>
+</html>
